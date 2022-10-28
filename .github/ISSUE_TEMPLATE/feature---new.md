@@ -14,7 +14,9 @@ assignees: ''
 
 ## Priority
 
-(1 - very important, 5 - not very important)
+(1 - high priority
+2 - medium priority
+3 - low priority)
 
 
 ## Time Estimate
