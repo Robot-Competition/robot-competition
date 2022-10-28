@@ -1,66 +1,53 @@
-import {navbar} from '../resources/text.js';
+import {navbar} from './text.js';
 
 
 class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <navbar>
-            <nav class="navbar navbar-expand-sm">
-                <div class="container navbar-container">
-                    <div class="navbar-brand">  
-                        <a 
-                            href="#" 
-                            class="">
-                            ${navbar.UofGCup}
-                        </a>
-                    </div>
-                    <button
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        class="navbar-toggler"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav pull-right justify-content-center">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link active">
-                                    ${navbar.WhatIsUofGCup.WhatIsUofGCup}
-                                </a>
-                            </li>
+<header class="header_section">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="index.html">
+                  <span>${navbar.brand}</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle"
-                                id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                >
-                                    ${navbar.UofGCup23.UofGCup23}
-                                </a>
-                                <ul class="dropdown-menu"
-                                aria-labelledBy="navbarDropdown">
-                                    <li><a href="#"
-                                    class="dropdown-item">Feature #1</a></li>
-                                    <li><a href="#"
-                                    class="dropdown-item">Feature #2</a></li>
-                                    <li><a href="#"
-                                    class="dropdown-item">Feature #3</a></li>
-                                </ul>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                ${navbar.Contact}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </navbar>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex  flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav  ">
+                      <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false" href="what_is_uofg_cup.html">${navbar.WhatIsUofGCup.WhatIsUofGCup}</a>
+                      <ul class="dropdown-menu" aria-labelledBy="navbarDropdown1">
+                          <li><a href="what_is_uofg_cup.html"
+                          class="dropdown-item">${navbar.WhatIsUofGCup.WhatIsUofGCup}</a></li>
+                          <li><a href="rules.html"
+                          class="dropdown-item">${navbar.WhatIsUofGCup.Rules}</a></li>
+                          <li><a href="past_competitions.html"
+                          class="dropdown-item">${navbar.WhatIsUofGCup.PastCompetitions}</a></li>
+                      </ul>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown2" data-toggle="dropdown" aria-expanded="false" href="#">${navbar.UofGCup23.UofGCup23}</a>
+                      <ul class="dropdown-menu" aria-labelledBy="navbarDropdown2">
+                          <li><a href="uofg_ucp_23.html"
+                          class="dropdown-item">${navbar.UofGCup23.UofGCup23}</a></li>
+                          <li><a href="leaderboards.html"
+                          class="dropdown-item">${navbar.UofGCup23.Leaderboards}</a></li>
+                          <li><a href="apply.html"
+                          class="dropdown-item">${navbar.UofGCup23.Apply}</a></li>
+                      </ul>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="contact.html">${navbar.Contact}</a>
+                      </li>
+                  </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </header>
 `
     }
 }
