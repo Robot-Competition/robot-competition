@@ -1,5 +1,5 @@
 const navbar = {
-    brand : "UofGCup",
+    brand : "UofG Cup",
     WhatIsUofGCup : {
         WhatIsUofGCup : "What is UofG Cup?",
         Rules : "Rules",
@@ -13,8 +13,10 @@ const navbar = {
     Contact : "Contact"
 };
 
-const index = {
-    Tagline: "The University of Glasgow Presents"
+const pastComp = {
+    title : "There are currently no past competitions right now",
+    description: "Please check out our current competition",
+    button: "UofG Cup '23"
 };
 
-export {navbar, index};
+export {navbar, pastComp};
