@@ -1,7 +1,7 @@
 body {
   font-family: "Khand", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #0B406C;
 }
 
 .layout_padding {
@@ -1196,4 +1196,13 @@ a:focus {
   font-size: 300%;
   font-family: "Khand", sans-serif;
   margin-bottom: 6%;
+}
+
+
+.text-passage {
+  width: 70%;
+  height: 60%;
+  text-align: left;
+  font-size: 130%;
+  margin: 2% 12% 0% 12%;
 }
