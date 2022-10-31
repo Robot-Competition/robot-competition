@@ -1,6 +1,3 @@
-import {pastComp} from './text.js';
-
-
 class PageTitle extends HTMLElement {
     connectedCallback() {
         var title = this.attributes.title.value;
