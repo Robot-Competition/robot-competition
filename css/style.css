@@ -5,7 +5,7 @@ body {
 }
 
 .layout_padding {
-  padding: 75px 0;
+  padding: 50px 0;
 }
 
 .layout_padding2 {
@@ -44,6 +44,7 @@ body {
   color: #050505;
   position: relative;
   font-family: "Khand", sans-serif;
+  font-size: 300%;
 }
 
 .heading_container h2 span {
@@ -578,7 +579,8 @@ a:focus {
 }
 
 .about_section {
-  background-image: url(../images/about-bg.jpg);
+  height: 91vh;
+  background-image: url(../images/race-track.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -614,7 +616,7 @@ a:focus {
 }
 
 .about_section .detail-box p {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .about_section .detail-box a {
