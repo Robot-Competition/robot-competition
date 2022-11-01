@@ -579,11 +579,16 @@ a:focus {
 }
 
 .about_section {
-  height: 91vh;
+  height: 100vh;
   background-image: url(../images/race-track.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
+}
+
+.about_section.track {
+  background-image: none;
+  margin-top: -100px;
 }
 
 .about_section .row {
@@ -591,6 +596,10 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.about_section.track .row {
+  margin-bottom: 50px;
+} 
 
 .about_section .detail-box .heading_container {
   -webkit-box-pack: start;
@@ -1272,4 +1281,9 @@ a:focus {
   padding-left: 150px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.track-modal {
+  width: 50%;
+  height: 50%;
 }
