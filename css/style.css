@@ -641,16 +641,18 @@ a:focus {
 }
 
 .gallery_section {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .gallery_section p {
+  color: white;
   margin-top: 25px;
   margin-bottom: 30px;
 }
 
 .gallery_section .gallery_bg {
-  background-color: #eeeeee;
+  background-color: #0B406C;
 }
 
 .gallery_section .gallery_container {
@@ -671,19 +673,46 @@ a:focus {
 }
 
 .gallery_section .gallery_container .img-box img {
+  opacity: 0.5;
   width: 100%;
   height: 100%;
 }
 
 .gallery_section .gallery_container .img-box .btn-box {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+}
+
+.gallery_section .gallery_container .img-box .btn-box h1 {
+  display: block;
+  font-size: 70px;
+  margin: 20px 0px;
+}
+
+.gallery_section .gallery_container .img-box .btn-box h1:hover {
+  color: orange;
+}
+
+.gallery_section .gallery_container .img-box:hover h1 {
+  
+}
+
+.gallery_section .gallery_container .img-box .btn-box p {
+  display: none;
+  font-size: 25px;
+}
+
+.gallery_section .gallery_container .img-box .btn-box p:hover {
+  color: orange;
+}
+
+.gallery_section .gallery_container .img-box:hover p {
+  display: block;
 }
 
 .gallery_section .gallery_container .img-box .btn-box a {
@@ -1207,4 +1236,40 @@ a:focus {
   text-align: left;
   font-size: 130%;
   margin: 2% 12% 0% 12%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 12px 0px;
+  background-color: #1C5A8E !important;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #CEBF3A !important;
+  border-color: #f7672c;
+  color: #1C5A8E !important;
+}
+
+.custom-button.button-2 {
+  width: 350px;
+  border-radius: 40px;
+}
+
+.custom-container {
+  width: 100%;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-right: auto;
+  margin-left: auto;
 }
