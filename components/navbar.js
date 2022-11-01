@@ -31,7 +31,7 @@ class Navbar extends HTMLElement {
                       <li class="nav-item">
                       <a class="nav-link dropdown-toggle" id="navbarDropdown2" data-toggle="dropdown" aria-expanded="false" href="#">${navbar.UofGCup23.UofGCup23}</a>
                       <ul class="dropdown-menu" aria-labelledBy="navbarDropdown2">
-                          <li><a href="uofg_ucp_23.html"
+                          <li><a href="uofg_cup_23.html"
                           class="dropdown-item">${navbar.UofGCup23.UofGCup23}</a></li>
                           <li><a href="leaderboards.html"
                           class="dropdown-item">${navbar.UofGCup23.Leaderboards}</a></li>
