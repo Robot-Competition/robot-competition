@@ -27,11 +27,12 @@
   <!-- components -->
   <script src="components/navbar.js" type="module" defer></script>
   <script src="components/pageTitle.js" type="module" defer></script>
+  <script src="components/trackBox.js" type="module" defer></script>
 </head>
 
 <body class="sub_page">
   <navbar-component></navbar-component>
-  <!-- gallery section -->
+  <page-title title="UOFG CUP '23"></page-title>
   <section class="gallery_section">
     <div class="custom-container">
       <p>
@@ -47,13 +48,13 @@
         some form, by injected humour, or randomised words
       </p>
       <div class="btn-container">
-        <a href="" class="custom-button button-2">
+        <a href="leaderboards.html" class="custom-button button-2">
           See the Leaderboards
         </a>
-        <a href="" class="custom-button button-2">
+        <a href="apply.html" class="custom-button button-2">
           Apply Now
         </a>
-        <a href="" class="custom-button button-2">
+        <a href="build.html" class="custom-button button-2">
           Build it Yourself
         </a>
       </div>
@@ -62,136 +63,68 @@
       <div class="custom-container">
         <div class="gallery_container ">
           <div class="box-1">
-            <div class="img-box b-1">
-              <a href="tracks.html#1">
-                <img src="images/race-track-example.jpg" alt="">
-                <div class="btn-box">
-                  <h1>Track 1</h1>
-                  <p>Straight-line track to test self-driving ability</p>
-                </div>
-              </a>
-            </div>
-            <div class="img-box b-3">
-              <a href="tracks.html#3">
-                <img src="images/race-track-example-2.jpg" alt="">
-                <div class="btn-box">
-                  <h1>Track 3</h1>
-                  <p>Straight-line track to test self-driving ability</p>
-                </div>
-              </a>
-            </div>
-            <div class="img-box b-5">
-              <a href="">
-                <img src="images/race-track-example-2.jpg" alt="">
-                <div class="btn-box">
-                  <h1>Track 5</h1>
-                  <p>Straight-line track to test self-driving ability</p>
-                </div>
-              </a>
-            </div>
-            <div class="img-box b-7">
-              <a href="">
-                <img src="images/race-track-example-2.jpg" alt="">
-                <div class="btn-box">
-                  <h1>Track 7</h1>
-                  <p>Straight-line track to test self-driving ability</p>
-                </div>
-              </a>
-            </div>
-            <div class="img-box b-9">
-              <a href="">
-                <img src="images/bird-6.jpg" alt="">
-                <div class="btn-box">
-                  <h1>Track 9</h1>
-                  <p>Straight-line track to test self-driving ability</p>
-                </div>
-              </a>
-            </div>
+            <track-box
+              id="1"
+              image="images/race-track-example.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="3"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="5"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="7"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="9"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="11"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
           </div>
           <div class="box-2">
-            <div class="box-2-top">
-              <div class="img-box b-2">
-                <a href="tracks.html#2">
-                  <img src="images/race-track-example.jpg" alt="">
-                  <div class="btn-box">
-                    <h1>Track 2</h1>
-                    <p>Straight-line track to test self-driving ability</p>
-                  </div>
-                </a>
-              </div>
-              <div class="img-box b-4">
-                <a href="">
-                  <img src="images/race-track-example-2.jpg" alt="">
-                  <div class="btn-box">
-                    <h1>Track 4</h1>
-                    <p>Straight-line track to test self-driving ability</p>
-                  </div>
-                </a>
-              </div>
-              <div class="img-box b-6">
-                <a href="">
-                  <img src="images/race-track-example-2.jpg" alt="">
-                  <div class="btn-box">
-                    <h1>Track 6</h1>
-                    <p>Straight-line track to test self-driving ability</p>
-                  </div>
-                </a>
-              </div>
-              <div class="img-box b-8">
-                <a href="">
-                  <img src="images/race-track-example-2.jpg" alt="">
-                  <div class="btn-box">
-                    <h1>Track 8</h1>
-                    <p>Straight-line track to test self-driving ability</p>
-                  </div>
-                </a>
-              </div>
-              <div class="img-box b-10">
-                <a href="">
-                  <img src="images/race-track-example-2.jpg" alt="">
-                  <div class="btn-box">
-                    <h1>Track 10</h1>
-                    <p>Straight-line track to test self-driving ability</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="box-2-btm">
-              <div class="box-2-left">
-                <div class="img-box b-4">
-                  <img src="images/bird-4.jpg" alt="">
-                  <div class="btn-box">
-                    <a href="" class="btn-1">
-
-                    </a>
-                    <a href="" class="btn-2">
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="box-2-right">
-                <div class="img-box b-6">
-                  <img src="images/bird-5.jpg" alt="">
-                  <div class="btn-box">
-                    <a href="" class="btn-1">
-
-                    </a>
-                    <a href="" class="btn-2">
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <track-box
+              id="2"
+              image="images/race-track-example.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="4"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="6"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="8"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
+            <track-box
+              id="10"
+              image="images/race-track-example-2.jpg"
+              description="Straight-line track to test self-driving ability">
+            </track-box>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end gallery section -->
-
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>

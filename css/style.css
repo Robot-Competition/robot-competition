@@ -1208,6 +1208,7 @@ a:focus {
 .title {
   padding-top: 20px;
   text-align: center;
+  color: white;
 }
 
 .past-comp-modal {
