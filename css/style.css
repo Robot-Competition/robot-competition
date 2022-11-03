@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 70px;
+}
+
 body {
   font-family: "Khand", sans-serif;
   color: #0c0c0c;
@@ -79,10 +83,10 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 100vh;
-  background-image: url(../images/home-page-2.jpg);
+  height: calc(100vh - var(--navbar-height));
+  background-image: url(../images/home-page.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: right top;
   position: relative;
 }
 
@@ -178,7 +182,7 @@ a:focus {
 .custom_nav-container {
   z-index: 99999;
   padding: 0;
-  height: 70px;
+  height: var(--navbar-height);
 }
 
 .custom_nav-container .navbar-toggler {
@@ -237,8 +241,13 @@ a:focus {
           justify-content: center;
 }
 
+.slider_section .carousel {
+  margin-top: -170px;
+}
+
 .slider_section .detail-box h1 {
-  margin-bottom: 25px;
+  font-weight: bold;
+  margin: 25px 0;
   font-size: 4rem;
   color: #ffffff;
 }
@@ -1270,6 +1279,10 @@ a:focus {
   color: #1C5A8E !important;
 }
 
+.custom-button.button-1 {
+  border-radius: 10px;
+}
+
 .custom-button.button-2 {
   width: 350px;
   border-radius: 40px;
@@ -1296,4 +1309,8 @@ a:focus {
 .justify-text {
   text-align: justify !important;
   text-justify: inter-word !important;
+}
+
+.carousel-item .container {
+  margin-left: 8% !important;
 }
