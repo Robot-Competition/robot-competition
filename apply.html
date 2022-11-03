@@ -11,8 +11,10 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>UofG Cup</title>
+  <title>Apply</title>
 
+  <!-- w3 schools style -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
   <!-- bootstrap core css -->
@@ -26,41 +28,24 @@
 
   <!-- components -->
   <script src="components/navbar.js" type="module" defer></script>
+  <script src="components/pageTitle.js" type="module" defer></script>
+
 </head>
 
 <body>
   <navbar-component></navbar-component>
-  <div class="hero_area">
-    <section class=" slider_section ">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-10">
-                  <div class="detail-box">
-                    <h3>
-                      The University of Glasgow Presents
-                    </h3>
-                    <h1>
-                      UofG Cup '23<br>
-                    </h1>
-                    <div class="btn-box">
-                      <a href="uofg_cup_23.html" class="custom-button button-1">
-                        UOFG CUP 23
-                      </a>
-                      <a href="apply.html" class="custom-button button-1">
-                        APPLY
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <page-title title="ENTER UOFG CUP '23"></page-title>
+    <div class="text-passage justify-text">
+      To put forward an entry for UofG Cup ‘23, please fill in the application process below. 
+Please submit all files necessary for us to be able to run your code. If you believe your code requires an explicit instructions to use, then please submit a file with the necessary instructions.
+For each round you’d like to enter, please submit a video of your best attempt for each round and a text file containing your times.
+    </div>
+    <div class="btn-container center layout_padding-top">
+      <a href="https://forms.gle/PsE19nRDx9uAKzjs7" class="custom-button button-2">
+        APPLY
+      </a>
+    </div>
   </div>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
