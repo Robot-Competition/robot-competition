@@ -1,12 +1,12 @@
 :root {
   --navbar-height: 70px;
   --main-font: "Raleway";
-
   --black: #0c0c0c;
   --dark-blue: #0B406C;
   --medium-blue: #1C5A8E;
   --light-blue: #0bd7f7;
   --orange: #f7672c;
+  --light-orange: orange;
   --yellow: #CEBF3A;
   --white: #ffffff;
 }
@@ -713,25 +713,24 @@ a:focus {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  overflow: visible;
 }
 
 .gallery_section .gallery_container .img-box .btn-box h1 {
   display: block;
-  font-size: 70px;
+  font-size: 65px;
   margin: 20px 0px;
 }
 
-.gallery_section .gallery_container .img-box .btn-box h1:hover {
-  color: orange;
+.gallery_section .gallery_container .img-box .btn-box h1:hover,
+.gallery_section .gallery_container .img-box .btn-box p:hover {
+  color: var(--light-orange);
 }
 
 .gallery_section .gallery_container .img-box .btn-box p {
   display: none;
-  font-size: 25px;
-}
-
-.gallery_section .gallery_container .img-box .btn-box p:hover {
-  color: orange;
+  font-size: 20px;
+  
 }
 
 .gallery_section .gallery_container .img-box:hover p {
@@ -1354,4 +1353,9 @@ a:focus {
 
 .full-width {
   width: 100%;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
 }
