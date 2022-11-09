@@ -4,6 +4,7 @@
 
   --black: #0c0c0c;
   --dark-blue: #0B406C;
+  --medium-blue: #1C5A8E;
   --light-blue: #0bd7f7;
   --orange: #f7672c;
   --yellow: #CEBF3A;
@@ -620,7 +621,7 @@ a:focus {
 
 .about_section {
   height: calc(100vh - var(--navbar-height));
-  background-image: url(../images/race-track.jpg);
+  background-image: url(../images/about-page.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -666,23 +667,6 @@ a:focus {
 
 .about_section .detail-box p {
   margin-top: 25px;
-}
-
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 7px 20px;
-  background-color: #f7672c;
-  color: #ffffff;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: 1px solid transparent;
-  margin: 45px 0;
-}
-
-.about_section .detail-box a:hover {
-  background-color: transparent;
-  border-color: #f7672c;
-  color: #f7672c;
 }
 
 .about_section .img-box img {
@@ -1273,22 +1257,21 @@ a:focus {
   justify-content: space-between;
 }
 
+.about_section a {
+  padding: 7px 20px;
+  margin: 45px 0;
+}
+
+
 .custom-button {
   display: inline-block;
   padding: 12px 0px;
-  background-color: #1C5A8E !important;
   -webkit-transition: all .3s;
   transition: all .3s;
   border: 1px solid transparent;
   margin-right: 10px;
-  color: var(--white);
   text-align: center;
-}
-
-.custom-button:hover {
-  background-color: var(--yellow) !important;
-  border-color: var(--orange);
-  color: #1C5A8E !important;
+  color: var(--white);
 }
 
 .custom-button.button-1 {
@@ -1298,6 +1281,39 @@ a:focus {
 .custom-button.button-2 {
   width: 350px;
   border-radius: 40px;
+}
+
+.custom-button.button-1,
+.custom-button.button-2 {
+  background-color: var(--medium-blue);
+}
+
+.custom-button.button-1:hover,
+.custom-button.button-2:hover {
+  background-color: var(--yellow) !important;
+  border-color: var(--orange);
+  color: var(--medium-blue) !important;
+}
+
+.custom-button.button-3 {
+  background-color: var(--orange);
+  border-radius: 20px;
+  width: 150px;
+}
+
+.margin_right {
+  margin-right: 30px !important;
+}
+
+.custom-button.button-3:hover {
+  background-color: transparent !important;
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.slider_section .detail-box .btn-box a {
+  width: 175px;
+  text-align: center;
 }
 
 .custom-container {
