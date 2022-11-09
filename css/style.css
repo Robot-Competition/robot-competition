@@ -128,7 +128,7 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  padding: 35px 15px 10px 15px;
+  padding: calc(var(--navbar-height) / 2) 15px;
   color: #ffffff;
   text-align: center;
 }
@@ -1145,18 +1145,6 @@ a:focus {
 }
 
 /* end footer section*/
-
-/*
-.navbar-nav {
-  -webkit-transition: width .5s;
-  transition: width .5s;
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  opacity: 0;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-*/
 
 
 .lg_nav-toggle {
