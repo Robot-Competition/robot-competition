@@ -15,8 +15,8 @@ class Navbar extends HTMLElement {
               </button>
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <div class="d-flex  flex-column flex-lg-row align-items-center">
-                  <ul class="navbar-nav  ">
+                  <div class="d-flex  flex-column flex-lg-row align-items-center full-width">
+                  <ul class="navbar-nav  nav-link-container">
                       <li class="nav-item">
                       <a class="nav-link dropdown-toggle" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false" href="what_is_uofg_cup.html">${navbar.WhatIsUofGCup.WhatIsUofGCup}</a>
                       <ul class="dropdown-menu" aria-labelledBy="navbarDropdown1">
