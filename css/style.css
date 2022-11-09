@@ -69,7 +69,7 @@ body {
   position: absolute;
   top: 50%;
   left: -45px;
-  background-image: url(../images/dove-orange.png);
+  background-image: url(../images/logo.png);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-size: cover;
@@ -77,15 +77,14 @@ body {
 
 .heading_container h2::after {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 40px;
+  height: 36px;
   position: absolute;
   top: 50%;
-  border-radius: 100%;
-  right: -17px;
-  background-color: var(--orange);
+  background-image: url(../images/logo.png);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  background-size: cover;
 }
 
 /*header section*/
@@ -623,8 +622,8 @@ a:focus {
   height: calc(100vh - var(--navbar-height));
   background-image: url(../images/about-page.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
+  background-position: right bottom;
+  position: relative;
 }
 
 .about_section.track {
@@ -654,19 +653,14 @@ a:focus {
 }
 
 .about_section .detail-box .heading_container h2 span {
-  color: #f7672c;
-}
-
-.about_section .detail-box .heading_container h2::before {
-  background-image: url(../images/logo.png);
-}
-
-.about_section .detail-box .heading_container h2::after {
-  background-color: #ffffff;
+  color: var(--orange);
 }
 
 .about_section .detail-box p {
   margin-top: 25px;
+  color: var(--dark-blue);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about_section .img-box img {
@@ -729,10 +723,6 @@ a:focus {
 
 .gallery_section .gallery_container .img-box .btn-box h1:hover {
   color: orange;
-}
-
-.gallery_section .gallery_container .img-box:hover h1 {
-  
 }
 
 .gallery_section .gallery_container .img-box .btn-box p {
