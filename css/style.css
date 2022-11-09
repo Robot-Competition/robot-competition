@@ -115,7 +115,6 @@ body {
 
 .header_section {
   background: #1C5A8E;
-  overflow-x: hidden;
   overflow-y: visible !important;
 }
 
@@ -136,6 +135,10 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link {
   color: var(--orange);
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .dropdown-menu {
+  display: inline-block;
 }
 
 a,
