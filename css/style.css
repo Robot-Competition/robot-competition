@@ -1158,13 +1158,6 @@ a:focus {
 }
 */
 
-.navbar {
-  overflow: visible !important;
-}
-
-.navbar-nav {
-  transform: translateX(1vw);
-}
 
 .lg_nav-toggle {
   -webkit-transform: translateX(0);
