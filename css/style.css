@@ -619,7 +619,7 @@ a:focus {
 }
 
 .about_section {
-  height: 100vh;
+  height: calc(100vh - var(--navbar-height));
   background-image: url(../images/race-track.jpg);
   background-size: cover;
   background-attachment: fixed;
