@@ -1195,6 +1195,8 @@ a:focus {
   padding-top: 20px;
   text-align: center;
   color: white;
+  font-size: 60px;
+  font-family: var(--main-font), sans-serif; 
 }
 
 .past-comp-modal {
