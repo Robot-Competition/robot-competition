@@ -6,6 +6,7 @@
   --dark-blue: #0B406C;
   --light-blue: #0bd7f7;
   --orange: #f7672c;
+  --yellow: #CEBF3A;
   --white: #ffffff;
 }
 
@@ -134,7 +135,7 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link {
-  background-color: #f7672c;
+  color: var(--orange);
 }
 
 a,
@@ -179,8 +180,6 @@ a:focus {
 }
 
 .navbar-brand span {
-  /*text-transform: uppercase; 
-  font-weight: bold; */
   color: #ffffff;
 }
 
@@ -1260,7 +1259,7 @@ a:focus {
 }
 
 .custom-button:hover {
-  background-color: #CEBF3A !important;
+  background-color: var(--yellow) !important;
   border-color: var(--orange);
   color: #1C5A8E !important;
 }
