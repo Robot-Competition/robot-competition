@@ -1,11 +1,18 @@
 :root {
   --navbar-height: 70px;
+  --main-font: "Raleway";
+
+  --black: #0c0c0c;
+  --dark-blue: #0B406C;
+  --light-blue: #0bd7f7;
+  --orange: #f7672c;
+  --white: #ffffff;
 }
 
 body {
-  font-family: "Khand", sans-serif;
-  color: #0c0c0c;
-  background-color: #0B406C;
+  font-family: var(--main-font), sans-serif;
+  color: var(--white);
+  background-color: var(--dark-blue);
 }
 
 .layout_padding {
@@ -45,14 +52,12 @@ body {
 .heading_container h2 {
   font-weight: bold;
   margin: 0 10px 0 0;
-  color: #050505;
   position: relative;
-  font-family: "Khand", sans-serif;
   font-size: 300%;
 }
 
 .heading_container h2 span {
-  color: #0bd7f7;
+  color: var(--light-blue);
 }
 
 .heading_container h2::before {
@@ -76,7 +81,7 @@ body {
   top: 50%;
   border-radius: 100%;
   right: -17px;
-  background-color: #f7672c;
+  background-color: var(--orange);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -253,7 +258,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #0bd7f7;
+  color: var(--light-blue);
   font-weight: bold;
 }
 
@@ -452,7 +457,7 @@ a:focus {
   width: 40px;
   height: 40px;
   border: none;
-  border: 1.5px solid #0bd7f7;
+  border: 1.5px solid var(--light-blue);
   opacity: 1;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -935,7 +940,7 @@ a:focus {
 }
 
 .client_section ol.carousel-indicators li.active {
-  background-color: #0bd7f7;
+  background-color: var(--light-blue);
 }
 
 .subscribe_section {
@@ -1244,7 +1249,6 @@ a:focus {
 
 .modal-title {
   font-size: 300%;
-  font-family: "Khand", sans-serif;
   margin-bottom: 6%;
 }
 
@@ -1270,13 +1274,13 @@ a:focus {
   transition: all .3s;
   border: 1px solid transparent;
   margin-right: 10px;
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
 }
 
 .custom-button:hover {
   background-color: #CEBF3A !important;
-  border-color: #f7672c;
+  border-color: var(--orange);
   color: #1C5A8E !important;
 }
 
@@ -1314,4 +1318,21 @@ a:focus {
 
 .carousel-item .container {
   margin-left: 8% !important;
+}
+
+.custom-container .table {
+  background: white;
+  text-align: center;
+}
+
+.custom-container .table thead {
+  font-size: 130%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
 }
