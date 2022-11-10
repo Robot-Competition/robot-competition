@@ -9,6 +9,8 @@
   --light-orange: orange;
   --yellow: #CEBF3A;
   --white: #ffffff;
+
+  --container-padding: 150px;
 }
 
 body {
@@ -1309,8 +1311,8 @@ a:focus {
 
 .custom-container {
   width: 100%;
-  padding-right: 150px;
-  padding-left: 150px;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
   margin-right: auto;
   margin-left: auto;
 }
@@ -1358,4 +1360,8 @@ a:focus {
 .justify-text {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.custom-container-center {
+  right: -50%;
 }
