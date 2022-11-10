@@ -11,6 +11,9 @@
   --white: #ffffff;
 
   --container-padding: 150px;
+  --layout-padding-l: 75px;
+
+  --contact-box-width: 500px;
 }
 
 body {
@@ -36,11 +39,11 @@ body {
 }
 
 .layout_padding-top {
-  padding-top: 17%;
+  padding-top: var(--layout-padding-l);
 }
 
 .layout_padding-bottom {
-  padding-bottom: 75px;
+  padding-bottom: var(--layout-padding-l);
 }
 
 .heading_container {
@@ -1026,16 +1029,17 @@ a:focus {
   color: #f7672c;
 }
 
+
+
 /* contact section */
 .contact_section {
-  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
 .contact_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact_section .map_section {
@@ -1048,18 +1052,18 @@ a:focus {
 
 .contact_section .map_section .map-responsive iframe {
   height: 100%;
+  border-radius: 10px;
 }
 
 .contact_section .contact_box {
-  width: 700px;
-  position: absolute;
-  bottom: 10px;
+  width: var(--contact-box-width);
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #ffffff;
   border-radius: 30px;
-  padding: 20px 35px 25px 35px;
+  padding: 20px calc(var(--contact-box-width) * 1/5) 25px calc(var(--contact-box-width) * 1/5);
   -webkit-box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 0.22);
   box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 0.22);
 }
@@ -1080,8 +1084,6 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 25px;
-  padding-left: 45px;
 }
 
 .contact_section .contact_info a {
@@ -1098,6 +1100,18 @@ a:focus {
 .contact_section .contact_info a img {
   margin-right: 15px;
 }
+
+.contact_section .socials {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_section .socials a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 
 .contact_form-container button {
   display: inline-block;
@@ -1332,6 +1346,20 @@ a:focus {
   padding-left: var(--container-padding);
   margin-right: auto;
   margin-left: auto;
+}
+
+.contact_section.flex-container {
+  display: flex;
+}
+
+.contact_section .contact-container-1 {
+  width: 40%;
+  padding: var(--layout-padding-l) 100px;
+}
+
+.contact_section .contact-container-2 {
+  width: 60%;
+  padding: var(--layout-padding-l) var(--container-padding);
 }
 
 .track-modal {
