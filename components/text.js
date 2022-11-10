@@ -7,6 +7,7 @@ const navbar = {
     },
     UofGCup23 : {
         UofGCup23 : "UofG Cup '23",
+        Tracks : "Tracks",
         Leaderboards : "Leaderboards",
         Apply : "Apply"
     },
@@ -17,6 +18,75 @@ const pastComp = {
     title : "There are currently no past competitions right now",
     description: "Please check out our current competition",
     button: "UofG Cup '23"
+};
+
+const tracks = {
+    1 : { 
+        description : "A straight-line track navigated with a controller",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#1",
+        build_link : ""
+    },
+    2 : { 
+        description : "A straight-line track navigated by the robot",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#2",
+        build_link : ""
+    },
+    3 : { 
+        description : "Full track navigated with the controller",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#3",
+        build_link : ""
+    },
+    4 : { 
+        description : "Full track navigated by the robot",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#4",
+        build_link : ""
+    },
+    5 : { 
+        description : "The full track with the controller but with added obstacles",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#5",
+        build_link : ""
+    },
+    6 : { 
+        description : "The full track with obstacles navigated by the robot",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#6",
+        build_link : ""
+    },
+    7 : { 
+        description : "The full track with a parking zone using the controller",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#7",
+        build_link : ""
+    },
+    8 : { 
+        description : "The full track with the parking zone navigated by the robot",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#8",
+        build_link : ""
+    },
+    9 : { 
+        description : "Full track, obstacles, and the parking zone using the controller",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#9",
+        build_link : ""
+    },
+    10 : { 
+        description : "Full track, obstacles, and the parking zone navigated by the robot",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#10",
+        build_link : ""
+    },
+    11 : { 
+        description : "Navigate the track by drawing a line on your phone for the robot to follow",
+        img_src : "images/race-track-example.jpg",
+        leaderboard_link : "leaderboards.html#11",
+        build_link : ""
+    },
 };
 
 const players = {
@@ -188,4 +258,4 @@ const compData = {
     }
 }
 
-export {navbar, pastComp, compData, players};
+export {navbar, pastComp, tracks, compData, players};
