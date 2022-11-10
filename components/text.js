@@ -7,6 +7,7 @@ const navbar = {
     },
     UofGCup23 : {
         UofGCup23 : "UofG Cup '23",
+        Tracks : "Tracks",
         Leaderboards : "Leaderboards",
         Apply : "Apply"
     },

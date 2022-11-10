@@ -33,6 +33,8 @@ class Navbar extends HTMLElement {
                       <ul class="dropdown-menu" aria-labelledBy="navbarDropdown2">
                           <li><a href="uofg_cup_23.html"
                           class="dropdown-item">${navbar.UofGCup23.UofGCup23}</a></li>
+                          <li><a href="tracks.html"
+                          class="dropdown-item">${navbar.UofGCup23.Tracks}</a></li>
                           <li><a href="leaderboards.html"
                           class="dropdown-item">${navbar.UofGCup23.Leaderboards}</a></li>
                           <li><a href="apply.html"
